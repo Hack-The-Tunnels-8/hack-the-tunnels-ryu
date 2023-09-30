@@ -12,6 +12,7 @@ import {
   SignUp,
 } from "./pages";
 import { AccountProvider } from "./context";
+import  NotFound  from "./pages/NotFound/404";
 import "./index.scss";
 
 const router = createBrowserRouter([
@@ -45,8 +46,8 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <div>404</div>,
-  },
+    element: <NotFound />,
+  }
 ]);
 
 export function Root() {

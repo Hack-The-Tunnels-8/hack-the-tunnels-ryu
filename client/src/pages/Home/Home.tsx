@@ -5,7 +5,7 @@ import { ServiceAPI } from "../../infrastructure";
 import "./Home.style.scss";
 
 function Home() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([ {title:"hello", description:"testetstetestetstest", price:23.5,url:"https://www.cs.rochester.edu/~pawlicki/ECOMM/tem/HTML/Figures%20Ch1to4/figure4-6.jpg"}]);
 
   useEffect(() => {
     const fetchData = async () => {
