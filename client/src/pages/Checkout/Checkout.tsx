@@ -46,6 +46,16 @@ function Checkout() {
           <>
             <h2>You are about to make an order with the following product:</h2>
             <div className="checkout-page__product">
+              <Link to={`/products/${product.id}`} key={`${product.id}`}>
+                <ProductPreviewCard
+                      id = "checkout"
+                      title={product.title}
+                      description={product.description}
+                      price={product.price}
+                      imageUrl={product.imageUrl}
+                      key={`${product.id}`}
+                    />
+                    </Link>
               <h3>Title: {product.title}</h3>
             </div>
             <button onClick={() => createOrder()}>
