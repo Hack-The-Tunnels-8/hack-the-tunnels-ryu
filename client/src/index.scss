@@ -22,6 +22,29 @@ background-attachment: fixed;
 
 }
 
+@media (prefers-color-scheme:light){
+  body {
+    background: linear-gradient(-45deg, white, green, blue);
+    animation: darkGrad 15s ease infinite;
+    background-size: 40000% 40000%;
+    /*Self explanatory*/
+        background-repeat: no-repeat;
+        ;
+    
+  }
+  @keyframes darkGrad {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
 @keyframes gradientBG {
   0% {
     background-position: 0% 50%;
