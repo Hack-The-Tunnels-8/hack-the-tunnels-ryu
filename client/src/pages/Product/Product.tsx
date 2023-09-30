@@ -30,10 +30,11 @@ function Product() {
         {product && (
           <>
             <div className="product-page__product">
-              <div className ="leftSide"></div>
+              <div className ="leftSide">
                 <Link to={`/checkout/${product.id}`}>
                 <button>Buy Now</button>
                 </Link>
+              </div>
               <div className = "rightSide">
                 <h3>Title: {product.title}</h3>
                 <p>ID: {id}</p>
