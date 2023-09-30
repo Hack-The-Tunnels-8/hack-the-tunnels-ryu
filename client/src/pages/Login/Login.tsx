@@ -9,12 +9,14 @@ function Login() {
   const { loggedIn, login } = useAccountContext();
   const navigate = useNavigate();
 
-  const attemptLogin = async () => {
+  const attemptLogin = async (e) => {
+    e.preventDefault();
     try {
+      console.log("hello")
       const message = await login("admin@email.com", "password");
-      setMessage(message);
+      setMessage(message)
     } catch (error) {
-      console.log(error);
+      setMessage(message)
     }
   };
 
@@ -28,10 +30,14 @@ function Login() {
     <Page>
       <div className="login-page">
         <h1>Login</h1>
-        <button onClick={() => attemptLogin()}>
-          Login (as user set in code)
+        <form action="" method="post">
+        <p>ID: <input name="email" className="username" type="text"/></p>
+        <p>PW: <input name="password" className="password" type="text"/></p>
+        <button onClick={(e) => attemptLogin(e)}>
+          Login
         </button>
         {message && <p>{message}</p>}
+        </form>
       </div>
     </Page>
   );
