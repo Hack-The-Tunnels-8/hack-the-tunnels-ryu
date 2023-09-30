@@ -5,7 +5,7 @@ import { ServiceAPI } from "../../infrastructure";
 import "./Home.style.scss";
 
 function Home() {
-  const [products, setProducts] = useState([ {title:"hello", description:"testetstetestetstest", price:23.5,url:"https://www.cs.rochester.edu/~pawlicki/ECOMM/tem/HTML/Figures%20Ch1to4/figure4-6.jpg"}]);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,9 +18,9 @@ function Home() {
 
   return (
     <Page>
-      <div className="parallax">
+      <div className="parallax"></div>
         <div className="home-page">
-          <h1 className="home-page__title">Home</h1>
+          <h1 className="home-page__title"><br /><br />Home</h1>
           <h2>Products:</h2>
           <p>Hello World</p>
           <div className="home-page__products">
@@ -37,7 +37,6 @@ function Home() {
             ))}
           </div>
         </div>
-      </div>
     </Page>
   );
 }

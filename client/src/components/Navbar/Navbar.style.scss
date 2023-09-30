@@ -2,4 +2,34 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  position:fixed;
+  top:0
+}
+
+.accountButton {
+border: 1px solid #D1CCDC;
+border-radius: 1px;
+width: 80px;
+margin: 8px;
+text-align: center;
+padding: 10px;
+cursor: pointer;
+color: white;
+background-color: #4C2A85;
+min-height: 1em
+}
+
+.filler {
+  padding: 41vw;
+}
+
+ul {
+  list-style-type: none
+}
+
+li {
+  list-style-type: none
+}
+.fRight{
+  float:right
 }

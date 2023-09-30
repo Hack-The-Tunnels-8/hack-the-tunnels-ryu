@@ -5,7 +5,9 @@
 
   &__products {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
 
     a {
       text-decoration: none;
@@ -13,4 +15,6 @@
       font-family: 'Courier New', Courier, monospace;
     }
   }
+
+
 }
