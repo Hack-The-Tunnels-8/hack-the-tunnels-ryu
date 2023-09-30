@@ -1,4 +1,5 @@
 export const login = async (email: string, password: string) => {
+  console.log("i got here")
   const response = await fetch(
     `${import.meta.env.VITE_API_ROOT}/api/v1/login`,
     {
@@ -13,5 +14,6 @@ export const login = async (email: string, password: string) => {
     },
   );
   const json = await response.json();
+  console.log(JSON.stringify(json))
   return json;
 };
