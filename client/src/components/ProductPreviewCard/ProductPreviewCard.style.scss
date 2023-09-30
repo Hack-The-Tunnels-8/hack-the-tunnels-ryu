@@ -1,11 +1,13 @@
 .product-preview-card {
   &__title {
+    font-size: 50px;
     font-style: bold;
-    color: green;
+    color: blue;
   }
 
   &__description {
-    color: blue;
+    font-size: 40px;
+    color: green;
   }
 
   &__image {

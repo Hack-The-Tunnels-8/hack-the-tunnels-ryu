@@ -1,4 +1,35 @@
 body {
   margin: 0;
   overflow-x: hidden;
+/*Fixes background and allows parallax scrolling*/
+background-attachment: fixed;
+/*Sets the background as a gradient*/
+    background: linear-gradient(-45deg, #311016, #53589b, #a30210);
+/*Makes the background super big and slides it around like it's animated*/
+    background-size: 40000% 40000%;
+/*Self explanatory*/
+    background-repeat: no-repeat;
+    ;
+/*names an animation "gradientBG" sets the animation for 15 seconds and makes it infinite*/
+    animation: gradientBG 15s ease infinite;
+
+    overflow-x: hidden;
+    font-family: Quicksand;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    width: 101.17%;
+
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
